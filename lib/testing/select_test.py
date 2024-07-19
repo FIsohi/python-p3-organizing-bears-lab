@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+# lib/testing/select_test.py
 
 import sqlite3
 
@@ -11,7 +11,6 @@ from sql_queries import (
 )
 
 connection = sqlite3.connect(":memory:")
-
 cursor = connection.cursor()
 
 create_file = open("lib/create.sql")
